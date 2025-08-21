@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul of Waifu</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/logotype.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <a href="#home" class="active nav-home">
+                        <img src="assets/icons/logotitle.png" alt="logotype" width="160px" height="50px" class="logo-dark">
+                        <img src="assets/icons/logotitle_black.png" alt="logotype" width="160px" height="50px" class="logo-light" style="display: none;">
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features" class="nav-features">Возможности</a></li>
+                    <li><a href="#screenshots" class="nav-screenshots">Скриншоты</a></li>
+                    <li><a href="#history" class="nav-history">История</a></li>
+                    <li><a href="#download" class="nav-download">Скачать</a></li>
+                    <li>
+                        <div class="theme-language-controls">
+                            <div class="theme-toggle" id="themeToggle">
+                                <div class="theme-toggle-slider"></div>
+                            </div>
+                            <select class="language-selector" id="languageSelector">
+                                <option value="ru">RU</option>
+                                <option value="en">EN</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <div class="hero-main-content">
+                <div class="hero-text-content">
+                    <h1 class="hero-title">Вдохните душу в ваших любимых персонажей</h1>
+                    <p class="hero-description">Soul of Waifu - это десктопное приложение с открытым исходным кодом, где вы можете оживить своих персонажей и вести общение с ИИ-моделями - даже локальными. Никаких сложных настроек, только мгновенное погружение в мир ролевых игр с нейросетью!</p>
+                    <div class="cta-buttons">
+                        <a href="#download" class="btn btn-primary download-btn">Скачать для Windows</a>
+                        <a href="docs/overview/overview.html" class="btn btn-secondary docs-btn">Документация</a>
+                    </div>
+                </div>
+                <div class="hero-image-content">
+                    <div class="hero-screenshot-container">
+                        <div class="hero-screenshot-wrapper">
+                            <div class="hero-screenshot-particles">
+                                <div class="particle-1"></div>
+                                <div class="particle-2"></div>
+                            </div>
+                            <video autoplay muted loop playsinline class="hero-screenshot">
+                                <source src="assets/trailer.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">Прокрутите вниз</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <div class="section-container">
+            <h2 class="section-title features-title">Основные возможности</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    <h3 class="feature-title-1">Простота и удобство</h3>
+                    <p class="feature-desc-1">Даже если вы впервые сталкиваетесь с ИИ - не волнуйтесь. Интутивно понятный интерфейс делает взаимодействие с приложением легким, понятным и приятным с первого запуска.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-atom"></i>
+                    </div>
+                    <h3 class="feature-title-2">Языковые модели</h3>
+                    <p class="feature-desc-2">Вы можете использовать API от ведущих платформ, но программа также позволяет запускать локальные языковые модели прямо внутри неё.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="feature-title-3">Общение с персонажами</h3>
+                    <p class="feature-desc-3">Общайтесь с персонажами с помощью многофункционального чата - кастомизируйте, управляйте сообщениями, импортируйте чаты и звоните персонажам.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                    <h3 class="feature-title-4">Голос и анимация</h3>
+                    <p class="feature-desc-4">Персонажи могут говорить через различные TTS-системы и реагировать с помощью поз и анимаций, используя изображения, Live2D или VRM модели. В программе доступно 28 различных эмоций.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-download-alt"></i>
+                    </div>
+                    <h3 class="feature-title-5">Интеграция с Hugging Face</h3>
+                    <p class="feature-desc-5">Загружайте и управляйте локальными языковыми моделями прямо в приложении. Поддерживается удобный формат GGUF для быстрой и эффективной работы на вашем устройстве. Работает на процессорах и видеокартах NVIDIA и AMD.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3 class="feature-title-6">Широкие возможности</h3>
+                    <p class="feature-desc-6">Ощутите весь спектр эмоций от ролевых игр с любимыми персонажами, тонко настраивая каждый аспект взаимодействия: системные промпты, лорбуки, параметры моделей, персоны пользователя и многое другое.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="screenshots">
+        <div class="section-container">
+            <h2 class="section-title screenshots-title">Интерфейс приложения</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item fade-in">
+                    <div class="screenshot-image screenshot-1">
+                        <img src="assets/screenshots/screenshot_list.jpg">
+                    </div>
+                    <div class="caption">
+                        <h4 class="screenshot-title-1">Главное меню с персонажами</h4>
+                        <p class="screenshot-desc-1">Удобное управление всеми вашими персонажами в одном месте</p>
+                    </div>
+                </div>
+                <div class="screenshot-item fade-in">
+                    <div class="screenshot-image screenshot-2">
+                        <img src="assets/screenshots/screenshot_gateway.png">
+                    </div>
+                    <div class="caption">
+                        <h4 class="screenshot-title-2">Врата Персонажей</h4>
+                        <p class="screenshot-desc-2">Ищите и добавляйте нужных персонажей через специальный раздел</p>
+                    </div>
+                </div>
+                <div class="screenshot-item fade-in">
+                    <div class="screenshot-image screenshot-3">
+                        <img src="assets/screenshots/screenshot_chat.png">
+                    </div>
+                    <div class="caption">
+                        <h4 class="screenshot-title-3">Многофункциональный чат</h4>
+                        <p class="screenshot-desc-3">Общайтесь с любимыми персонажами в многофункциональном чате, где вы можете кастомизировать фон, аватар, авторские заметки, а также звонить персонажу</p>
+                    </div>
+                </div>
+                <div class="screenshot-item fade-in">
+                    <div class="screenshot-image screenshot-4">
+                        <img src="assets/screenshots/screenshot_settings.jpg">
+                    </div>
+                    <div class="caption">
+                        <h4 class="screenshot-title-4">Продвинутые настройки</h4>
+                        <p class="screenshot-desc-4">Экспериментируйте с гибкими настройками и адаптируйте программу под свои потребности</p>
+                    </div>
+                </div>
+                <div class="screenshot-item fade-in">
+                    <div class="screenshot-image screenshot-5">
+                        <img src="assets/screenshots/screenshot_models_hub.jpg">
+                    </div>
+                    <div class="caption">
+                        <h4 class="screenshot-title-5">Локальные языковые модели</h4>
+                        <p class="screenshot-desc-5">Загружайте и управляйте локальными языковыми моделями прямо в приложении, благодаря интеграции с сайтом Hugging Face</p>
+                    </div>
+                </div>
+                <div class="screenshot-item fade-in">
+                    <div class="screenshot-image screenshot-6">
+                        <img src="assets/screenshots/screenshot_sow_system.jpg">
+                    </div>
+                    <div class="caption">
+                        <h4 class="screenshot-title-6">Soul of Waifu System</h4>
+                        <p class="screenshot-desc-6">Разговаривайте с персонажем через микрофон с помощью модуля Soul of Waifu System</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="history" class="history">
+        <div id="history-particles"></div>
+        <div class="section-container history-content-wrapper">
+            <h2 class="section-title history-title">История развития</h2>
+            <div class="history-timeline-container">
+                <div class="history-timeline">
+                    <div class="history-item fade-in">
+                        <div class="history-date">2023</div>
+                        <div class="history-image">
+                            <div class="image-placeholder">
+                                <img src="assets/screenshots/screenshot_version_console.jpg" width="100%" height="100%">
+                            </div>
+                        </div>
+                        <div class="history-content">
+                            <h3 class="history-title-1">Консольная программа</h3>
+                            <p class="history-desc-1">Начало пути - простая консольная утилита для взаимодействия с ИИ. Базовая функциональность и текстовый интерфейс.</p>
+                        </div>
+                    </div>
+                    <div class="history-item fade-in">
+                        <div class="history-date">2024 - v1.0</div>
+                        <div class="history-image">
+                            <div class="image-placeholder">
+                                <img src="assets/screenshots/screenshot_version_1.jpg" width="100%" height="100%">
+                            </div>
+                        </div>
+                        <div class="history-content">
+                            <h3 class="history-title-2">Полноценный графический интерфейс</h3>
+                            <p class="history-desc-2">Переход от консоли к графическому интерфейсу. Работал только с Character AI и не имел большинства функций.</p>
+                        </div>
+                    </div>
+                    <div class="history-item fade-in">
+                        <div class="history-date">2025 - v2.0</div>
+                        <div class="history-image">
+                            <div class="image-placeholder">
+                                <img src="assets/screenshots/screenshot_version_2_0.jpg" width="100%" height="100%">
+                            </div>
+                        </div>
+                        <div class="history-content">
+                            <h3 class="history-title-3">Полностью с нуля</h3>
+                            <p class="history-desc-3">Полная переработка архитектуры и переписанный с нуля код. Добавлена поддержка облачных сервисов и локальных языковых моделей, аватары персонажей и модуль Soul of Waifu System.</p>
+                        </div>
+                    </div>
+                    <div class="history-item fade-in">
+                        <div class="history-date">2025 - v2.2</div>
+                        <div class="history-image">
+                            <div class="image-placeholder">
+                                <img src="assets/screenshots/screenshot_version_2_2.jpg" width="100%" height="100%">
+                            </div>
+                        </div>
+                        <div class="history-content">
+                            <h3 class="history-title-4">Крупнейшее обновление v2.2</h3>
+                            <p class="history-desc-4">Новейшая версия с полностью переработанным интерфейсом, поддержкой VRM моделей, множественных персон, лорбуков, изменения системных промптов, эмбиента, умной памяти, новых TTS-систем и многого другого.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="download" class="download">
+        <div class="section-container">
+            <div class="download-content">
+                <h2 class="section-title download-title">Скачать Soul of Waifu</h2>
+                <p class="download-description">Загрузите самую последнюю версию приложения и погрузитесь в мир ролевых игр с искусственным интеллектом уже сейчас!</p>
+                <div class="download-buttons">
+                    <a href="https://github.com/jofizcd/Soul-of-Waifu/releases/download/v2.2.0/Soul-of-Waifu-v2.2.0.7z" class="btn btn-primary windows-btn">Скачать для Windows</a>
+                </div>
+                <div class="version-info">
+                    <span class="version-text">Версия 2.2.0 | Размер: ~7GB | </span><a href="https://github.com/jofizcd/Soul-of-Waifu/releases" class="changelog-link">История изменений</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="section-container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3 class="footer-title">Soul of Waifu</h3>
+                    <p class="footer-description">Уникальное приложение для взаимодействия с ИИ-персонажами. Создавайте, настраивайте и общайтесь без лишних трудностей.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/jofizcd/Soul-of-Waifu" class="github-link"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/+UOWReJ5WlTAwOTk6" class="telegram-link"><i class="fab fa-telegram"></i></a>
+                        <a href="https://discord.com/invite/6vFtQGVfxM" class="discord-link"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.donationalerts.com/r/jofizcd" class="social-icon" title="Donation Alerts"><i class="fa-solid fa-hand-holding-dollar"></i></a>
+                        <a href="https://boosty.to/jofizcd" class="social-icon" title="Boosty"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="navigation-title">Навигация</h3>
+                    <ul>
+                        <li><a href="#home" class="footer-home">Главная</a></li>
+                        <li><a href="#features" class="footer-features">Возможности</a></li>
+                        <li><a href="#screenshots" class="footer-screenshots">Скриншоты</a></li>
+                        <li><a href="#history" class="footer-history">История</a></li>
+                        <li><a href="#download" class="footer-download">Скачать</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="resources-title">Ресурсы</h3>
+                    <ul>
+                        <li><a href="https://github.com/jofizcd/Soul-of-Waifu" class="github-link-2">GitHub репозиторий</a></li>
+                        <li><a href="docs/overview/overview.html" class="docs-link">Документация</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="contacts-title">Социальные сети</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/@jofizcd" class="youtube-link">YouTube канал</a></li>
+                        <li><a href="https://t.me/+UOWReJ5WlTAwOTk6" class="telegram-link-2">Telegram канал</a></li>
+                        <li><a href="https://discord.com/invite/6vFtQGVfxM" class="discord-link-2">Discord сервер</a></li>
+                        <li><a href="https://boosty.to/jofizcd" class="boosty-link">Boosty</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright-text">&copy; 2025 Soul of Waifu. Разработал jofizcd.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
